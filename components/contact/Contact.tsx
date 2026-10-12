@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <>
       <Card id='contact' className="mt-30 bg-[#1a1a1a] mx-auto   p-10 rounded-4xl flex items-center text-center relative before:content-[''] before:absolute before:top-[-50%] before:right-[-10%] before:w-100 before:h-100 before:rounded-full before:bg-(--primary-color) before:opacity-15 before:blur-[60px]">
-        <h3 className="text-white text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em] ">
+        <h3 className="text-white text-[32px] md:text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em] ">
           Let's build
           <span className="text-(--primary-color) block">something good.</span>
         </h3>

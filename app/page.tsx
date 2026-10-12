@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <main id="home" className=" px-5 md:max-w-280  mx-auto ">
         <div
-          className="flex flex-col items-center justify-center gap-7.5  h-[95vh] mt-10 sm:mt-0 px-10   
+          className="flex flex-col items-center md:justify-start sm:h-[50vh] lg:min-h-screen lg:my-0 justify-center lg:justify-center gap-7.5 md:gap-15 my-25  sm-mt-40 px-10   
          "
         >
           <div className=" border border-[#ece8e1] py-1 px-4 rounded-3xl bg-[#FFFFFFB3] flex gap-2 items-center text-[12px] ">
@@ -23,13 +23,13 @@ export default function Home() {
           </div>
 
           <div className="text-center">
-            <h1 className="font-bold leading-[1.02] tracking-[-0.04em] font-[syne] text-[32px]">
+            <h1 className="font-bold leading-[1.02] tracking-[-0.04em] font-[syne] text-[24px] md:text-[32px] mb-2 w-90 md:w-auto">
               Frontend developer <br /> who builds with
               <span className="text-(--primary-color)"> care.</span>
             </h1>
-            <p className="mb-2 md:mt-5 text-(--secondary-color) leading-[1.65] text-[17px]  text-center">
-              I turn ideas into responsive, accessible web experiences using
-              <br /> React, modern JavaScript, and a lot of attention to detail.
+            <p className=" w-87 md:w-auto mx-auto mb-2 md:mt-5 text-(--secondary-color) leading-[1.65] text-[17px]  text-center ">
+              I turn ideas into responsive, accessible web experiences using <br/>
+               React, modern JavaScript, and a lot of attention to detail.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="flex gap-12 items-center ">
+          <div className="flex gap-12 items-center flex-col sm:flex-row ">
             <div className="flex flex-col gap-1">
               <span className="font-bold font-[syne] text-4xl  text-center">
                 {projectsData.length}
@@ -74,6 +74,7 @@ export default function Home() {
               </span>
             </div>
           </div>
+
         </div>
         <Projects />
         <About />

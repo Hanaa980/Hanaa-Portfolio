@@ -23,13 +23,13 @@ export default function Carsoul({ project }: { project: Project }) {
         Autoplay({
           delay: 2000,
         }),
-      ]} className='w-100 mx-auto'>
+      ]} className='w-[84%] mx-auto'>
       <CarouselContent>
         {project?.screenshots.map((screen, index) => (
           <CarouselItem key={index}>
             <div className="p-1">
               <Card>
-                <CardContent className="flex  w-full items-center justify-center p-6 h-65 ">
+                <CardContent className="flex  w-full items-center justify-center p-2 h-65 ">
                   <Image src={screen!.image||''} alt="screenshot"  className="w-full h-full object-contain"/>
                 </CardContent>
               </Card>

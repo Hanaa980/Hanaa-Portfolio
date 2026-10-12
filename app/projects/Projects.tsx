@@ -22,10 +22,10 @@ export default function Projects() {
             Selected Work
           </span>
         </div>
-        <h2 className="text-(--heading-color) text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em]">
+        <h2 className="text-(--heading-color) w-90 text-[32px] md:text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em]">
           Projects I'm <span className="text-(--primary-color)">proud of.</span>
         </h2>
-        <div className="flex flex-wrap w-full lg:flex-nowrap gap-3  gap-y-5 lg:gap-5 my-10">
+        <div className="flex flex-wrap w-full lg:flex-nowrap gap-3  gap-y-10 lg:gap-5 my-10">
           {projectsData.map((project) => (
             <Link
               href={`projects/${project.id}`}

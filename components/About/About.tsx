@@ -23,13 +23,13 @@ export default function About() {
               About Me
             </span>
           </div>
-          <h2 className="text-(--heading-color) text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em]">
+          <h2 className="text-(--heading-color)  text-[32px] md:text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em]">
             Details make <span className="text-(--primary-color)">the difference.</span>
           </h2>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-5 mt-10">
-          <Card className=" mx-auto lg:w-2/3 w-full  p-5">
+        <div className="flex flex-col  md:flex-row  gap-5 mt-10">
+          <Card className="justify-center  mx-auto lg:w-2/3 w-full  p-5">
             <CardHeader>
               <CardDescription className="flex flex-col gap-3  text-[15px] text-[#444444] leading-[1.7] ">
                 <p>

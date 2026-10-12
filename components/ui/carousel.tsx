@@ -187,7 +187,7 @@ function CarouselPrevious({
       className={cn(
         "absolute touch-manipulation rounded-full",
         orientation === "horizontal"
-          ? "top-30 -left-12 my-auto"
+          ? "top-30 -left-8 my-auto"
           : "top-50 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -217,7 +217,7 @@ function CarouselNext({
       className={cn(
         "absolute touch-manipulation rounded-full",
         orientation === "horizontal"
-          ? " top-30 -right-12 my-auto"
+          ? " top-30 -right-8 my-auto"
           : "top-50 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}

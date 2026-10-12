@@ -13,14 +13,14 @@ export default function Education() {
               Background
             </span>
           </div>
-          <h2 className="text-(--heading-color) text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em]">
+          <h2 className="text-(--heading-color) text-[32px] md:text-[42px] font-[syne] font-bold mt-3 tracking-[-0.04em]">
             Education & <span className="text-(--primary-color)">certification.</span>
           </h2>
         </div>
 
         <div className="flex flex-col gap-10  ">
           <div className="flex gap-5">
-            <div className="relative p-2 border-5 border-(--primary-color) w-6 h-6 rounded-full bg-(--primary-color)  before:absolute before:left-1.75 before:top-0 before:h-33 before:w-0.5 before:bg-[#ece8e1] before:content-[''] before:-z-10">
+            <div className="relative p-2 border-5 border-(--primary-color) w-6 h-6 rounded-full bg-(--primary-color)  before:absolute before:left-1.75 before:top-0 before:h-49 md:before:h-40 before:w-0.5 before:bg-[#ece8e1] before:content-[''] before:-z-10">
               <div className="w-6 h-6 border-5 rounded-full absolute -top-1 -left-1"></div>
             </div>
             <div className=" flex gap-1 flex-col">

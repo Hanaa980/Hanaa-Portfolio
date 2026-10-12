@@ -39,16 +39,16 @@ export default async function ProjectDetails({ params }: PageProps) {
         style={{ "--project-color": project?.color } as React.CSSProperties}
       >
         
-        <div className=" w-full h-[80vh] relative text-white p-5 ">
+        <div className=" w-full h-[90vh] pt-30 md:h-[75vh] lg:h-[90vh] relative text-white p-5 ">
           <Image
             src={project!.screenshots[0]?.image}
             alt={project!.screenshots[0]!.title}
             width={500}
             height={300}
-            className=" absolute inset-0 -z-10  rounded-b-4xl  w-full object-cover h-full "
+            className=" absolute inset-0 -z-10  rounded-b-4xl  w-full object-contain md:object-cover h-full "
           />
           <div className="absolute top-0  -z-10 right-0 left-0 bg-[#070706d7] rounded-b-4xl bottom-0 "></div>
-          <div className="flex flex-col justify-end h-[65vh] px-5 md:max-w-280  mx-auto">
+          <div className="flex flex-col  justify-center h-[65vh] px-5 md:max-w-280  mx-auto">
             <Badge className="bg-[#ece8e66f] text-white mb-10 p-3  ">
               <Link href="/" className="flex items-center p-2 gap-1">
                 {" "}
@@ -57,7 +57,7 @@ export default async function ProjectDetails({ params }: PageProps) {
               </Link>
             </Badge>
             <Badge className=" bg-[#ece8e66f] text-white mb-10 p-2 h-15 animate-bounce">
-              {/* {project?.icon} */}
+           
               <Image
                 src={project!.icon || ""}
                 alt="priject icon"
@@ -74,7 +74,7 @@ export default async function ProjectDetails({ params }: PageProps) {
             </h1>
             <p>{project?.summary}</p>
 
-            <div className="links mt-7 flex gap-2">
+            <div className="links mt-7 flex flex-col md:flex-row gap-y-5 gap-2">
               <Link href={project!.githubUrl}>
                 {" "}
                 <div className="flex gap-1 justify-center items-center px-3 py-2 bg-white w-40 rounded-full text-black text-[16px] font-semibold">
@@ -91,9 +91,11 @@ export default async function ProjectDetails({ params }: PageProps) {
             </div>
           </div>
         </div>
+
         <div className="px-5 md:max-w-280  mx-auto ">
-          <div className="flex flex-wrap gap-3 mt-10">
-            <div className="w-[48.5%]  gap-1 py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
+    
+          <div className="flex  flex-wrap gap-3 mt-10">
+            <div className="w-[47%]  gap-1 py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
               <span className="text-[32px] font-bold  font-[syne] text-(--project-color)">
                 {project?.features.length}
               </span>
@@ -101,7 +103,7 @@ export default async function ProjectDetails({ params }: PageProps) {
                 features
               </p>
             </div>
-            <div className="w-[48.5%]   gap-1  py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
+            <div className="w-[47%]   gap-1  py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
               <span className="text-[32px] font-bold  font-[syne] text-(--project-color)">
                 {project?.technologies.length}
               </span>
@@ -109,7 +111,7 @@ export default async function ProjectDetails({ params }: PageProps) {
                 technologies
               </p>
             </div>
-            <div className="w-[48.5%]   gap-1 py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
+            <div className="w-[47%]   gap-1 py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
               <span className="text-[32px] font-bold  font-[syne] text-(--project-color)">
                 {project?.screenshots.length}
               </span>
@@ -117,7 +119,7 @@ export default async function ProjectDetails({ params }: PageProps) {
                 screenshots
               </p>
             </div>
-            <div className="w-[48.5%]  gap-1  py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
+            <div className="w-[47%]  gap-1  py-6 px-4 bg-white border  rounded-2xl text-(--project-color) flex items-center justify-center flex-col ">
               <span className="text-[32px] font-bold  font-[syne] text-(--project-color)">
                 {project?.highlights.length}
               </span>
@@ -125,6 +127,7 @@ export default async function ProjectDetails({ params }: PageProps) {
                 highlights
               </p>
             </div>
+    
           </div>
           {/* ------------------- */}
           <div className="my-7">
